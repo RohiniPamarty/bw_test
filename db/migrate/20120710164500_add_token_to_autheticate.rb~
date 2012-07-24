@@ -1,0 +1,7 @@
+class AddTokenToAutheticate < ActiveRecord::Migration
+  def change
+
+    add_column :autheticates, :token, :string
+
+  end
+end

@@ -1,0 +1,22 @@
+list of all posts
+
+
+
+<hr>
+<% @posts.each do |p| %>
+<br />
+<%= p.note %>
+    <br />
+   <%= p.link %>
+    <br />
+    <%= image_tag p.photo(:large) %>
+    <br />
+    <%#= link_to 'Show', book %>
+    <%#= link_to 'Destroy', book, confirm: 'Are you sure?', method: :delete %>
+<hr>
+
+<% end %>
+<% hidden_field_tag 'token', @token %>
+
+<%= link_to 'New Post', new_post_path %>
+<%= link_to "logout", "/logout" %>

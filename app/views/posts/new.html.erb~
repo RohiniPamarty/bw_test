@@ -1,0 +1,10 @@
+
+<%= form_for :post, :url => { :action => "create" }, :html => { :multipart => true } do |post| %>
+Photo
+<%= post.file_field :photo %>
+<br />
+Note
+<%= post.text_field :note %>
+<br />
+<%= post.submit %>
+<% end %>

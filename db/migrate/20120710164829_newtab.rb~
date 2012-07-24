@@ -1,0 +1,10 @@
+class Newtab < ActiveRecord::Migration
+  def up
+  create_table :autheticates do
+end
+  end
+
+  def down
+drop_table :autheticates
+  end
+end
